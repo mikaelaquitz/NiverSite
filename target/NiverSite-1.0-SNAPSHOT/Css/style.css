@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+:root{
+    /* --corFonte: #c0c0c0;*/
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    font-family: 'Fredoka', sans-serif;
+    display: grid;
+    background-color: #000;
+    max-width: 400px;
+    height: 100vh;
+    margin: 0 auto;
+    grid-template-rows: 90px 1fr 70px;
+    grid-template-areas: "header" "lista" "footer" 
+}
+
+.container header{
+    grid-area: header;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+}
+.container main{
+    grid-area: lista;
+    background-color: rgba(29, 27, 27, 0.9);
+
+}
+.container footer{
+    grid-area: footer;
+    background-color: #000;
+}
+.cabecalho{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 25px;
+    color: #FFFFFF; 
+}
+.logo img{
+    width: 50px;
+}
+
+.card{
+    background-color:#D4D4D4; 
+    color: #B65741;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-areas:
+        'nome nome img'
+        'icone data img';
+    align-items: center; 
+    width: 80%;
+    height: 100px;
+
+}
+.card h1{
+    /*background-color: yellow;*/
+    grid-area: nome;
+    margin: 5px;
+}
+.card i{
+    /*background-color: blue;*/
+    color:black;
+    grid-area: icone;
+    font-size: 22px;
+
+
+}
+.card p{
+    /*background-color: pink;*/
+    grid-area: data;
+    margin: 0;
+    font-size: 20px
+
+}
+.card img{
+    /* background-color: orange;*/
+    grid-area: img;
+}
+
+.rodape{
+    margin: 10px;
+    text-align: center;
+    display:flex;
+    justify-content: space-between;
+    color: #D8D8D8;
+    font-size: 18px;
+}
+.icones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%; 
+}
+.botao_adicionar{
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 60px;
+    position: relative;
+    height: 66px;
+    width: 66px;
+    background-color:#F0B357; 
+    border-radius: 50%;
+    cursor: pointer;
+    top: -50%;
+    border: 5px solid rgba(29, 27, 27, 0.9);
+}
+
+#principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color:white;
+    width: 85%;
+    height: 90%;
+}
+.info 
+{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+
+#botao_salvar{
+    Width:130px;
+    Height:40px;
+    background-color:#F0B357;
+    border-radius: 50px;
+}
